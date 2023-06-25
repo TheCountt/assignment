@@ -8,25 +8,37 @@
 #header {
   height: 40px;
   width: 100%;
+  display: flex;
 }
 
 .navigation-bar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  flex-direction: row;
   padding-top: 20px;
-  padding-left: 8%;
-  padding-right: 8%;
+  padding-left: 20%;
+  position: absolute;
+  margin-top: 0;
+  margin-left: 40px;
 }
 
 .logo {
-  font-size: 28px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  margin-bottom: 5px;
+  line-height: 12px;
+  float: left;
+  width: 180px;
+  height: 50px;
+  margin-left: 20px;
 }
 
 nav ul li {
   list-style-type: none;
   display: inline-block;
-  padding: 10px 20px;
+  padding: 30px 40px;
 }
 
 nav ul li a {
@@ -36,41 +48,44 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: blue;
+  color: black;
 }
-
 
 .login a {
   width: 45px;
   height: 20px;
-  margin-right: 15px;
+  margin-left: 70px;
   color: #0065FE;
   font-family: Gilroy-SemiBold;
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0em;
-  text-align: left;
+  text-align: right;
   animation: Smart animate;
   animation-timing-function: ease-out;
   animation-duration: 100ms;
+  text-align: right;
 }
 
-.btn {
+.login .btn {
   border: none;
-  width: Fixed (142px);
+  width: Fixed (150px);
   height: Fixed (44px);
-  padding: 12px 24px 12px 24px;
-  border-radius: 100px;
-  gap: 5px;
+  padding: 9px 18px 9px 18px;
+  border-radius: 50px;
+  gap: 3px;
+  margin-left: 2px;
+  margin-right: 10px;
   background: #0065FE;
   color: white;
+  text-align: left;
 }
 
 .maintext-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center space-evenly;
+  justify-content: center space-evenly ;
   margin-top: 80px;
 }
 
@@ -144,7 +159,7 @@ span {
   justify-content: center;
   margin-top: 10px;
   margin-right: 50px;
-  width: Hug (300px);
+  width: Hug 100%;
   height: Hug (150px);
   top: 600px;
   left: 300px;
@@ -205,7 +220,7 @@ span {
 .img2 {
   position: absolute;
   top: 30px;
-  left: 200px;
+  left: 300px;
   border: transparent;
 }
 
